@@ -1,0 +1,10 @@
+---
+- name: app1 to 3 app2 to 1
+  hosts: 192.168.1.211
+  tasks:
+
+    - name: app1 to 3
+      command: sh /root/shell/increase-app1-to-3.sh
+
+    - name: app2 to 1
+      command: sh /root/shell/decrease-app2-to-1.sh
