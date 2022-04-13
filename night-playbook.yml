@@ -1,6 +1,7 @@
 ---
 - name: app1 to 1 app2 to 3
   hosts: node_88_170
+  gather_facts: no
   tasks:
     - name: app1 to 1
       command: sh /root/shell/decrease-app1-to-1.sh
